@@ -57,22 +57,22 @@ body:
       label: "Приоритет"
       description: "Выберите приоритет"
       options:
-       - "Низкий"
-       - "Средний"
-       - "Высокий"
-       - "Критический"
+        - "Низкий"
+        - "Средний"
+        - "Высокий"
+        - "Критический"
     validations:
       required: true
-- type: dropdown
+  - type: dropdown
     id: severity
     attributes:
       label: "Серьезность"
       description: "Выберите уровень влияния дефекта на систему"
       options:
-       - "Незначительный"
-       - "Значительный"
-       - "Критический"
-       - "Блокирующий"
+        - "Незначительный"
+        - "Значительный"
+        - "Критический"
+        - "Блокирующий"
     validations:
       required: true
   - type: markdown
@@ -85,9 +85,5 @@ body:
       label: "Подтверждение"
       description: "Подтвердить выполнение условий"
       options:
-      - label: "Я ознакомился с отчетами о дефектах"
-        required: true 
-
-
-
-      
+        - label: "Я ознакомился с отчетами о дефектах"
+          required: true 
