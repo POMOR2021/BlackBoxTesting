@@ -1,1 +1,93 @@
+name: "Отчет об ошибке  "
+description: "Создать отчет об ошибке работы приложения"
+title: "[Ошибка]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Описание"
+      description: "подробно опишите обнаруженный дефект"
+      placeholder: "краткое и четкое описание проблемы"
+    validations:
+      required: true
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: "Предусловия"
+      description: "Укажите небходимые предусловия"
+      placeholder: "Например: пользователь авторизован"
+    validations:
+      required: false
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: "Шаги воспроизведения"
+      description: "Пошагово опишите как вызвать ошибку"
+      placeholder: "1. Перейти на страницу..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: "Ожидаемый результат"
+      description: "Что должо было произойти?"
+      placeholder: "Результат который вы ожидали"
+    validations:
+      required: true
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: "Фактический результат"
+      description: "Что произошло на самом деле"
+      placeholder: "Фактическое поевведение системы"
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Скриншоты"
+      description: "Прикрепить скриншоты"
+      placeholder: "Перетащите файлы или вставьте ссылки"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Приоритет"
+      description: "Выберите приоритет"
+      options:
+       - "Низкий"
+       - "Средний"
+       - "Высокий"
+       - "Критический"
+    validations:
+      required: true
+- type: dropdown
+    id: severity
+    attributes:
+      label: "Серьезность"
+      description: "Выберите уровень влияния дефекта на систему"
+      options:
+       - "Незначительный"
+       - "Значительный"
+       - "Критический"
+       - "Блокирующий"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Отобразить текст с разметкой markdown
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Подтверждение"
+      description: "Подтвердить выполнение условий"
+      options:
+      - label: "Я ознакомился с отчетами о дефектах"
+        required: true 
 
+
+
+      
