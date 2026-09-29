@@ -1,14 +1,14 @@
 name:"Отчет об ошибке"
-description: "Создать отчет об ошибке работы приложения"
-title: "[Ошибка]: "
-labels: ["bug"]
+description:"Создать отчет об ошибке работы приложения"
+title:"[Ошибка]: "
+labels:["bug"]
 body:
-  - type: textarea
-    id: description
+  - type:textarea
+    id:description
     attributes:
-      label: "Описание"
-      description: "подробно опишите обнаруженный дефект"
-      placeholder: "краткое и четкое описание проблемы"
+      label:"Описание"
+      description:"подробно опишите обнаруженный дефект"
+      placeholder:"краткое и четкое описание проблемы"
     validations:
       required: true
   - type: textarea
