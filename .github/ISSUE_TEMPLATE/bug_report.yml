@@ -1,6 +1,6 @@
 name:"Отчет об ошибке"
 description:"Создать отчет об ошибке работы приложения"
-title:"[Ошибка]: "
+title:"[Ошибка]:"
 labels:["bug"]
 body:
   - type:textarea
